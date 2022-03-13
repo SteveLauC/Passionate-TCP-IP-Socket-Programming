@@ -1,2 +1,2 @@
 # Passionate-TCP-IP-Socket-Programming
-Source code of Passionate TCP/IP Socket Programming by Yonn Sung Woo, and its counterpart implementation in Rust.
+Source code of Passionate TCP/IP Socket Programming by Yonn Sung Woo.
