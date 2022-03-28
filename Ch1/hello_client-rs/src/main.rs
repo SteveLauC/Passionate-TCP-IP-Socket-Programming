@@ -46,7 +46,7 @@ fn main() {
     }
 
     let n_bytes = read(sock, &mut buf).expect("can not read from sock");
-    let msg: &CStr = CStr::from_bytes_with_nul(&buf[0..n_bytes]).expect("Not a valid c string");
+    let msg: &CStr = CStr::from_bytes_with_nul(&buf[0..=n_bytes]).expect("Not a valid c string");
 
     println!("message from server: {:?}", msg);
     let _ = close(sock);
