@@ -42,6 +42,7 @@ int main(int ac, char * av[]) {
     if (-1 == str_len) {
         error_handling("read() error");
     }
+    message[str_len] = '\0';
 
     printf("message from server: %s\n", message);
     close(sock);
