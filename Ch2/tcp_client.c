@@ -46,6 +46,7 @@ int main(int ac, char * av[]) {
         }
         str_len += read_len;
     }
+    message[str_len] = '\0';
 
     printf("message from server: %s\n", message);
     printf("function read call count: %d\n", str_len);
